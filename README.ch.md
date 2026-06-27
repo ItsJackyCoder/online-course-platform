@@ -40,13 +40,13 @@
     備註:
     你可以註冊新帳號試用，或直接使用提供的帳號與密碼登入。
 
-#### 登入頁面:
+#### 登入頁面1:
 
-![](static/images/login.png)
+![](docs/images/homepage-section1.png)
 
-#### 註冊頁面:
+#### 登入頁面2:
 
-![](static/images/register.png)
+![](docs/images/homepage-section2.png)
 
 #### 首頁:
 

@@ -1,4 +1,4 @@
-# :moneybag: 線上學習系統
+# :moneybag: 線上課程管理平台
 
 ## [前往網站](https://jackyfang-course-platform-a05d06b8d172.herokuapp.com/)
 
@@ -17,28 +17,28 @@
 - 後端:`Express.js`, `Node.js`, `JWT Authentication`, `Passport.js`, `bcrypt`, `Joi`
 - 前端:`JavaScript`, `HTML`, `CSS`, `React`, `React Router DOM`, `Bootstrap`
 - 資料庫:`MongoDB Atlas`, `Mongoose`
-- 部屬平台: `heroku`
+- 部署平台: `heroku`
 
-## 使用者介面
-    (講師)
-    帳號:minjun.kim@gmail.com
-    密碼:minjun.kim
+## 測試帳號
 
-    帳號:seoyeon.lee@gmail.com
-    密碼:seoyeon.lee
+### 講師帳號
 
-    帳號:jihoon.park@gmail.com
-    密碼:jihoon.park
+| 帳號 | 密碼 |
+| --- | --- |
+| minjun.kim@gmail.com | minjun.kim |
+| seoyeon.lee@gmail.com | seoyeon.lee |
+| jihoon.park@gmail.com | jihoon.park |
 
-    (學生)
-    帳號:yujin.choi@gmail.com
-    密碼:yujin.choi
+### 學生帳號
 
-    帳號:jimin.han@gmail.com
-    密碼:jimin.han
+| 帳號 | 密碼 |
+| --- | --- |
+| yujin.choi@gmail.com | yujin.choi |
+| jimin.han@gmail.com | jimin.han |
 
-    備註:
-    你可以註冊新帳號試用，或直接使用提供的帳號與密碼登入。
+> 你也可以註冊新帳號試用，或直接使用上述測試帳號登入。
+
+## 畫面展示
 
 #### 首頁:
 
@@ -59,18 +59,18 @@
 ![](docs/images/profile-page1.png)
 ![](docs/images/profile-page2.png)
 
-#### 學生課程頁面:
+#### 學生已選課程頁面:
 
 ![](docs/images/student-course-page.png)
 
-#### 學生搜尋課程頁面:
+#### 學生瀏覽與搜尋課程頁面:
 
 ![](docs/images/student-search-course-page.png)
 
-#### 講師課程頁面:
+#### 講師課程管理頁面:
 
 ![](docs/images/instructor-course-page.png)
 
-#### 講師登記課程頁面:
+#### 講師新增課程頁面:
 
 ![](docs/images/instructor-post-course-page.png)

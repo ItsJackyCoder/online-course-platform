@@ -1,0 +1,302 @@
+.enroll-course-page {
+  padding: 3rem;
+
+  .enroll-title {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .search-message {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #b51f34;
+  }
+
+  .search-result-title {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+
+  .course-message-box {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 19rem);
+    gap: 2rem;
+    margin-top: 3rem;
+
+    justify-content: start;
+  }
+
+  .course-scene {
+    width: 17rem;
+    height: 19rem;
+    perspective: 1000px;
+  }
+
+  .course-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+    transform-style: preserve-3d;
+    transition: transform 0.7s ease;
+  }
+
+  .course-card.is-flipped {
+    transform: rotateY(180deg);
+  }
+
+  .course-card-face {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 1.5rem;
+    overflow: hidden;
+
+    border: 1px solid rgba(70, 70, 70, 0.2);
+    border-radius: 1rem;
+
+    box-shadow:
+      0 18px 40px rgba(0, 0, 0, 0.12),
+      0 4px 10px rgba(0, 0, 0, 0.06);
+
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  //已註冊的卡片外觀
+  .course-enrolled .course-card-face {
+    border: 2px solid #55a875;
+  }
+
+  .course-enrolled .course-card-front {
+    background: linear-gradient(135deg, #ffffff, #e8f8ed);
+  }
+
+  .course-enrolled .course-card-back {
+    background: linear-gradient(135deg, #ecfff2, #ccefd8);
+  }
+
+  .course-card-front {
+    justify-content: flex-start;
+    background: linear-gradient(135deg, #ffffff, #f3f7ff);
+  }
+
+  .course-instructor-badge {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    gap: 0.45rem;
+
+    margin: 0.85rem 0 0;
+    padding: 0.45rem 0.8rem;
+
+    border-radius: 999px;
+    background: linear-gradient(135deg, #6fa2ff, #4c88f5);
+    box-shadow: 0 7px 16px rgba(55, 124, 235, 0.22);
+
+    color: white;
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+  }
+
+  .course-instructor-badge span {
+    opacity: 0.78;
+  }
+
+  .course-instructor-badge strong {
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+  }
+
+  .course-card-front .click-hint {
+    margin-top: auto;
+    margin-bottom: 0;
+  }
+
+  .course-card-back {
+    justify-content: flex-start;
+    background: linear-gradient(135deg, #edf5ff, #cfe4ff);
+    color: #202938;
+
+    transform: rotateY(180deg);
+  }
+
+  .course-label {
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    opacity: 0.65;
+  }
+
+  .course-card h3 {
+    margin: 0;
+    font-size: 1.45rem;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  .course-card-back h3 {
+    margin-top: 1.15rem;
+  }
+
+  .course-back-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.7rem;
+  }
+
+  .course-back-header .course-label {
+    margin: 0;
+  }
+
+  .course-description {
+    margin: 0.75rem 0 0.9rem;
+    line-height: 1.55;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .course-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: auto;
+  }
+
+  .course-info {
+    padding: 0.75rem 0.85rem;
+    border: 1px solid rgba(52, 104, 170, 0.16);
+    border-radius: 0.8rem;
+    background: rgba(255, 255, 255, 0.48);
+  }
+
+  .course-info p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+  }
+
+  .course-actions {
+    display: flex;
+    gap: 0.4rem;
+  }
+
+  .enroll-course-btn {
+    border: none;
+    border-radius: 0.55rem;
+    padding: 0.4rem 0.65rem;
+
+    background: #2878df;
+    color: white;
+
+    font-size: 0.78rem;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+
+    transition:
+      transform 0.2s ease,
+      background-color 0.2s ease;
+  }
+
+  .enroll-course-btn:hover {
+    transform: translateY(-2px);
+    background: #1762c4;
+  }
+
+  .click-hint {
+    margin-top: auto;
+    margin-bottom: 0;
+
+    font-size: 0.8rem;
+    opacity: 0.65;
+  }
+
+  .course-card-back .click-hint {
+    color: rgba(32, 41, 56, 0.62);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .enroll-course-page {
+    padding: 1.5rem;
+
+    .course-list {
+      justify-items: center;
+    }
+  }
+
+  .empty-course-state {
+    margin-top: 2rem;
+    min-height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+
+    border: 1px dashed #b9d2f7;
+    border-radius: 1.25rem;
+    background: linear-gradient(135deg, #f8fbff, #edf5ff);
+  }
+
+  .empty-course-icon {
+    width: 3.6rem;
+    height: 3.6rem;
+    display: grid;
+    place-items: center;
+    margin-bottom: 1rem;
+
+    font-size: 1.7rem;
+    border-radius: 50%;
+    background: #dcecff;
+  }
+
+  .empty-course-state h2 {
+    margin: 0;
+    color: #243044;
+    font-size: 1.25rem;
+  }
+
+  .empty-course-state p {
+    margin: 0.7rem 0 1.35rem;
+    color: #6b778b;
+    line-height: 1.65;
+  }
+
+  .empty-course-link {
+    padding: 0.7rem 1.15rem;
+    border-radius: 0.65rem;
+
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    background: #2878ed;
+    box-shadow: 0 0.5rem 1rem rgba(40, 120, 237, 0.2);
+
+    transition:
+      transform 0.2s ease,
+      background 0.2s ease;
+  }
+
+  .empty-course-link:hover {
+    transform: translateY(-0.15rem);
+    background: #1769dc;
+  }
+}

@@ -1,0 +1,334 @@
+.hero-section {
+  min-height: 420px;
+  padding: 4rem 4.5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+
+  overflow: hidden;
+  background: linear-gradient(135deg, #f8fbff, #edf4ff);
+  border-radius: 20px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 650px;
+}
+
+.hero-badge {
+  display: inline-block;
+  margin-bottom: 1.2rem;
+  padding: 0.45rem 0.9rem;
+
+  color: #0d6efd;
+  background: #dceaff;
+  border-radius: 99px;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.hero-content h1 {
+  margin-bottom: 1.2rem;
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  font-weight: 800;
+}
+
+.hero-description {
+  margin: 0;
+  color: #303846;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.hero-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+  margin-top: 2.2rem;
+}
+
+.hero-feature {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.feature-icon {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(13, 110, 253, 0.1);
+}
+
+.hero-feature h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.hero-feature p {
+  margin: 0.15rem 0 0;
+  color: #6c757d;
+  font-size: 0.8rem;
+}
+
+.hero-visual {
+  position: relative;
+  width: 430px;
+  height: 300px;
+  flex-shrink: 0;
+
+  animation: frameFloat 3.2s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.hero-circle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+
+  width: 290px;
+  height: 290px;
+
+  background: #dceaff;
+  border-radius: 50%;
+}
+
+.laptop {
+  position: absolute;
+  right: 35px;
+  bottom: 42px;
+  z-index: 2;
+
+  width: 315px;
+}
+
+.laptop-screen {
+  height: 190px;
+  padding: 0.8rem;
+
+  display: flex;
+  gap: 0.7rem;
+
+  background: #ffffff;
+  border: 9px solid #20242b;
+  border-radius: 12px 12px 5px 5px;
+  box-shadow: 0 14px 22px rgba(0, 0, 0, 0.2);
+}
+
+.screen-sidebar {
+  width: 28%;
+  border-radius: 5px;
+  background: #edf2f8;
+}
+
+.screen-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.screen-card {
+  flex: 1;
+  border-radius: 6px;
+  background: #edf2f8;
+}
+
+.screen-main-card {
+  display: grid;
+  place-items: center;
+
+  color: white;
+  background: #5d9cff;
+  font-size: 2rem;
+}
+
+.laptop-keyboard {
+  width: 350px;
+  height: 22px;
+  margin-left: -18px;
+
+  background: #2c3038;
+  border-radius: 3px 3px 14px 14px;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.book {
+  position: absolute;
+  right: 5px;
+  z-index: 3;
+
+  width: 150px;
+  height: 24px;
+  border-radius: 3px;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15);
+}
+
+.book-one {
+  bottom: 22px;
+  background: #2e6fc7;
+}
+
+.book-two {
+  right: 18px;
+  bottom: 45px;
+  background: #62a463;
+}
+
+@media (max-width: 992px) {
+  .hero-section {
+    padding: 3rem 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-visual {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .hero-visual {
+    display: none;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+}
+
+//下方學生和講師卡片區域
+.role-section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.8rem;
+  margin-top: 1.8rem;
+}
+
+.role-card {
+  min-height: 270px;
+  padding: 3.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border-radius: 16px;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.role-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.12);
+}
+
+.role-label {
+  display: inline-block;
+  width: fit-content;
+  margin-bottom: 1rem;
+  padding: 0.35rem 0.75rem;
+
+  border-radius: 99px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/* 學生卡片 */
+.student-card {
+  color: white;
+  background: #22272d;
+}
+
+.student-card .role-label {
+  color: #dceaff;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* 講師卡片 */
+.teacher-card {
+  color: #20242b;
+  background: #f8fafc;
+  border: 1px solid #dde3ea;
+}
+
+.teacher-card .role-label {
+  color: #0d6efd;
+  background: #dceaff;
+}
+
+.role-card h2 {
+  margin: 0 0 0.8rem;
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+
+.role-card > p {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.role-info {
+  margin-top: 2rem;
+  padding-top: 1.2rem;
+
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.role-info span {
+  font-size: 1.35rem;
+}
+
+.role-info p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* 平板、手機 */
+@media (max-width: 768px) {
+  .role-section {
+    grid-template-columns: 1fr;
+  }
+
+  .role-card {
+    min-height: 220px;
+    padding: 2.5rem 2rem;
+  }
+
+  .role-card h2 {
+    font-size: 2rem;
+  }
+}
+
+@keyframes frameFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-1deg);
+    filter: drop-shadow(0 14px 12px rgba(0, 0, 0, 0.12));
+  }
+
+  50% {
+    transform: translateY(-0.9rem) rotate(1deg);
+    filter: drop-shadow(0 24px 20px rgba(0, 0, 0, 0.08));
+  }
+}

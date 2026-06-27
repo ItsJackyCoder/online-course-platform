@@ -14,23 +14,28 @@
 
 ## 技術堆疊
 
-- 後端:`Python3`
-- 前端:`JavaScript`, `HTML`, `CSS`
-- 框架: `Bootstrap`, `Flask`
-- 資料庫:`MySQL`(Used `SQLite3` for testing)
-- 雲端服務: `Google Cloud Platform(GCP)`, `Render`
-- API:[Global Real-Time Exchange Rate API](https://tw.rter.info/howto_currencyapi.php)
+- 後端:`Express.js`, `Node.js`, `JWT Authentication`, `Passport.js`, `bcrypt`, `Joi`
+- 前端:`JavaScript`, `HTML`, `CSS`, `React`, `React Router DOM`, `Bootstrap`
+- 資料庫:`MongoDB Atlas`, `Mongoose`
+- 部屬平台: `heroku`
 
 ## 使用者介面
+    (講師)
+    帳號:minjun.kim@gmail.com
+    密碼:minjun.kim
 
-    帳號:wang569
-    密碼:12345
+    帳號:seoyeon.lee@gmail.com
+    密碼:seoyeon.lee
 
-    帳號:cindy0925
-    密碼:flyaway
+    帳號:jihoon.park@gmail.com
+    密碼:jihoon.park
 
-    帳號:amy54yun
-    密碼:25896
+    (學生)
+    帳號:yujin.choi@gmail.com
+    密碼:yujin.choi
+
+    帳號:jimin.han@gmail.com
+    密碼:jimin.han
 
     備註:
     你可以註冊新帳號試用，或直接使用提供的帳號與密碼登入。

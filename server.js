@@ -11,7 +11,7 @@ const courseRoute = require("./routes").course;
 const passport = require("passport");
 require("./config/passport")(passport);
 
-const cors = require("cors");
+// const cors = require("cors");
 
 //和路徑有關的module
 const path = require("path");
@@ -35,7 +35,7 @@ mongoose
 //middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
+// app.use(cors());
 
 //heroku部屬用
 app.use(express.static(path.join(__dirname, "client", "build")));

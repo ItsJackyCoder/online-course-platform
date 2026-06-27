@@ -1,7 +1,8 @@
 import axios from "axios";
 
-// const API_URL = "https://project9-mern-28635bbac960.herokuapp.com/api/user";
-const API_URL = "http://localhost:8080/api/user";
+const API_URL =
+  "https://jackyfang-course-platform-a05d06b8d172.herokuapp.com/api/user";
+// const API_URL = "http://localhost:8080/api/user";
 // const API_URL = "http://172.30.1.16:8080/api/user";
 
 class AuthService {

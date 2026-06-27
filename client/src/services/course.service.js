@@ -2,8 +2,9 @@ import axios from "axios";
 import App from "../App";
 import AuthService from "./auth.service";
 
-// const API_URL = "https://project9-mern-28635bbac960.herokuapp.com/api/courses";
-const API_URL = "http://localhost:8080/api/courses";
+const API_URL =
+  "https://jackyfang-course-platform-a05d06b8d172.herokuapp.com/api/courses";
+// const API_URL = "http://localhost:8080/api/courses";
 // const API_URL = "http://172.30.1.16:8080/api/courses";
 
 class CourseService {

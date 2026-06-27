@@ -40,31 +40,37 @@
     備註:
     你可以註冊新帳號試用，或直接使用提供的帳號與密碼登入。
 
-#### 登入頁面1:
+#### 首頁:
 
 ![](docs/images/homepage-section1.png)
 
-#### 登入頁面2:
-
 ![](docs/images/homepage-section2.png)
 
-#### 首頁:
+#### 登入頁面:
 
-![](static/images/homepage-1.png)
-![](static/images/homepage-2.png)
+![](docs/images/login-page.png)
 
-#### 現金記帳頁面:
+#### 註冊頁面:
 
-![](static/images/cash_form.png)
+![](docs/images/register-page.png)
 
-#### 股票紀錄頁面:
+#### 個人檔案頁面:
 
-![](static/images/stock_form.png)
+![](docs/images/profile-page1.png)
+![](docs/images/profile-page2.png)
 
-#### 現金明細頁面:
+#### 學生課程頁面:
 
-![](static/images/cash_transaction_records.png)
+![](docs/images/student-course-page.png)
 
-#### 股票明細頁面:
+#### 學生搜尋課程頁面:
 
-![](static/images/stock_holdings.png)
+![](docs/images/student-search-course-page.png)
+
+#### 講師課程頁面:
+
+![](docs/images/instructor-course-page.png)
+
+#### 講師登記課程頁面:
+
+![](docs/images/instructor-post-course-page.png)

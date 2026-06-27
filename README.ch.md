@@ -1,4 +1,4 @@
-# :moneybag: 線上課程管理平台
+# 🎓: 線上課程管理平台
 
 ## [前往網站](https://jackyfang-course-platform-a05d06b8d172.herokuapp.com/)
 

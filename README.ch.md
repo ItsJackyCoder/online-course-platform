@@ -74,3 +74,7 @@
 #### 講師新增課程頁面:
 
 ![](docs/images/instructor-post-course-page.png)
+
+#### 404錯誤頁面:
+
+![](docs/images/instructor-post-course-page.png)

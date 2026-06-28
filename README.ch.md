@@ -77,4 +77,4 @@
 
 #### 404錯誤頁面:
 
-![](docs/images/instructor-post-course-page.png)
+![](docs/images/page404.png)

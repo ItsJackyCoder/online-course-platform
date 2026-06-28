@@ -74,3 +74,8 @@ The system includes core features such as user registration and login, role-base
 #### Instructor Create Course Page:
 
 ![](docs/images/instructor-post-course-page.png)
+
+#### Custom 404 Page:
+
+![](docs/images/page404.png)
+

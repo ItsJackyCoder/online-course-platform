@@ -76,3 +76,7 @@
 #### 강사 강의 등록 페이지:
 
 ![](docs/images/instructor-post-course-page.png)
+
+#### 404 오류 페이지:
+
+![](docs/images/page404.png)
